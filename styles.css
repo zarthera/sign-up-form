@@ -6,23 +6,29 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max(340px, 98dvw0);
+    height: 97dvh;
+}
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
-    width: 800px;
-    min-height: 800px;
-    background-color: rgba(0, 0, 0, 60%);
+    justify-content: space-evenly;
+    padding: 6px;
+    width: clamp(260px, 50rem, 50rem);
+    height: max(400px, 40rem, 95dvh);
     border-radius: 36px;
     border: 3px solid black;
     position: relative;
-    top: 56px;
-    left: 50px;
+    backdrop-filter: blur(4px);
 }
 h1{
-    font-size: 46px;
-    color: white;
+    font-size: 36px;
+    color: black;
     font-family: "Lato";
     font-style: italic;
 }
@@ -30,12 +36,14 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    height: clamp(100px, 600px, 50%);
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    position: relative;
+    bottom: 14px;
+    gap: 16px;
 }
 .fillout-container{
     display: flex;
@@ -46,17 +54,42 @@ form{
 }
 .section-container{
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 25px;
 }
 .section{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 160px;
 }
 
 label{
     font-size: 20px;
-    color: white;
+    font-weight: 600;
+    color: black;
     font-family: "Lato";
+}
+button{
+    border: none;
+    font-family: "Lato";
+    font-weight: 600;
+    background: rgb(173, 59, 59);
+    text-decoration: none;
+    height: 40px;
+    backdrop-filter: blur(3px);
+    color: whitesmoke;
+    font-size: 26px;
+    border-radius: 12px;
+}
+button:hover{
+    cursor: pointer;
+    transition: ease 0.07s all;
+    transform: scale(1.1);
+}
+.sign-up-title{
+    text-decoration:underline solid black;
+}
+.travel-logo{
+    width:150px;
+    height: 150px;
 }
