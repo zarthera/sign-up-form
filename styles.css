@@ -101,3 +101,16 @@ button:hover{
     width:150px;
     height: 150px;
 }
+.github-link:hover{
+    transition: ease .5s all;
+    transform: rotate(360deg) scale(1.2);
+
+}
+.copyright{
+    position: absolute;
+    top: 96dvh;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
